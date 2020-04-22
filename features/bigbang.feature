@@ -12,3 +12,7 @@ Scenario: matter created is plasma
   When: subatomic particles bind into protons, neutrons and electrons
   Then: inspection shows that electrons are not bound to nuclei
   
+Scenario:
+  given
+  when
+  then
