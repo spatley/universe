@@ -9,6 +9,6 @@ Scenario: creation of the universe
 Scenario: matter created is plasma
   Given: the event has happened
   And: something is detected
-  When: the matter is inspected
+  When: subatomic particles bind into protons, neutrons and electrons
   Then: inspection shows that electrons are not bound to nuclei
   
