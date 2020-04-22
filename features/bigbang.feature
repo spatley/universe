@@ -13,6 +13,6 @@ Scenario: matter created is plasma
   Then: inspection shows that electrons are not bound to nuclei
   
 Scenario:
-  given an API for coffee
+  given an POS Order for coffee
   when I order a "latte"
   then a label is printed for "latte"
