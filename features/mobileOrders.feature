@@ -14,8 +14,11 @@ Feature:
     And the order is prepared
     
   Scenario: mobile order with food and drink
-    When an order is placed for <items>
+    When an order is placed for <item>
     Then the order is sent to the selected store
     And the order is prepared
-    
+        |item            |
+        | "large coffee" |
+        | "medium coffee"|
+        | "small coffee" |
     
