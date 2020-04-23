@@ -21,4 +21,5 @@ Feature:
         | "large coffee" |
         | "medium coffee"|
         | "small coffee" |
+        | "jumbo coffee" |
     
