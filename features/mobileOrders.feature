@@ -9,7 +9,7 @@ Feature:
     And a store is pre selected
 
   Scenario: mobile order is placed
-    When an order is placed for "Large" "Brewed Coffee"
+    When an order is placed for "Large Brewed Coffee"
     Then the order is sent to the selected store
     And the order is prepared
     
