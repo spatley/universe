@@ -22,4 +22,8 @@ Feature:
         | "medium coffee"|
         | "small coffee" |
         | "jumbo coffee" |
+
+Scenario: order food
+  When and order is placed
+  Then an order is placed for <item>
     
