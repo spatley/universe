@@ -26,4 +26,14 @@ Feature:
 Scenario: order food
   When and order is placed
   Then an order is placed for <item>
+  
+  ## detail scenarios
+  
+  Scenario: points are inctremented
+  
+  Scenairio: svc balance is decremented
+  
+  Scenario: order is routed to correct store
+  
+  Scenario: order is routed to correct printer
     
