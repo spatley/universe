@@ -21,11 +21,11 @@ Feature:
     Then the user's stars are incremented by <starcount>
     
     | price | starcount |
+    | 5.00  | 2         |
+    | 4.00  | 2         |
+    | 3.00  | 1         |
+    | 2.00  | 1         |
     
     
-  Scenairio: svc balance is decremented
-  
-  Scenario: order is routed to correct store
-  
-  Scenario: order is routed to correct printer
+
     
