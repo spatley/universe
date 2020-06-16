@@ -3,34 +3,26 @@ Feature:
   I need to place an order from my phone
   so that I can pick it up in a store
   
-  Background: 
-    Given a mobile device
-    And the app is installed
-    And a store is pre selected
-
-  Scenario: mobile order is placed
-    When an order is placed for "Large Brewed Coffee"
-    Then the order is sent to the selected store
-    And the order is prepared
-    
-  Scenario: mobile order with food and drink
+  
+  Scenario Outline: mobile order pricing
+    Given a User on mobile with a selected store
     When an order is placed for <item>
-    Then the order is sent to the selected store
-    And the order is prepared
-        |item            |
-        | "large coffee" |
-        | "medium coffee"|
-        | "small coffee" |
-        | "jumbo coffee" |
+    Then the customer is charged <price>
+    And the order is sent to the store
+        |item            |  price |
+        | "large coffee" |  5.00  |
+        | "medium coffee"|  4.00  |
+        | "small coffee" |  3.00  |
 
-Scenario: order food
-  When and order is placed
-  Then an order is placed for <item>
   
-  ## detail scenarios
-  
-  Scenario: points are inctremented
-  
+  Scenario Outline: points are inctremented
+    Given a User on mobile with a selected store
+    When an order is placed for <price>
+    Then the user's stars are incremented by <starcount>
+    
+    | price | starcount |
+    
+    
   Scenairio: svc balance is decremented
   
   Scenario: order is routed to correct store
