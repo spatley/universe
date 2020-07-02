@@ -29,7 +29,13 @@ Feature:
     | 4.00  | 2         |
     | 3.00  | 1         |
     | 2.00  | 1         |
-    
+
+  Scenario: Starbucks Value Card is decremented
+    Given a User on mobile
+    And a selected store
+    And a SVC with a balance of 50.00
+    When an order is placed for 5.00
+    Then the SVC balance will be 45.00
     
 
     
