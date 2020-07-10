@@ -18,4 +18,9 @@ Feature: order coffee from a mobile app
     Given a User on mobile with a selected store
     When a "mocha" is ordered
     Then the selected store prints a label with the text "Cafe Mocha"
+    
+  Scenario: order a cold brew
+    Given a User on mobile with a selected store
+    When a "Cold Brew" is ordered
+    Then the selected store prints a label with the text "Iced Cold Brew"
   
