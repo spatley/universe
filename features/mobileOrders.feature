@@ -7,7 +7,7 @@ Feature: order coffee from a mobile app
   Scenario: Basic mobile order
     Given a User on mobile with a selected store
     When a "coffee" is ordered
-    Then the selected store prints a label with the text "brew"
+    Then the selected store prints a label with the text "Drip coffee"
     
   Scenario: Order a latte
     Given a User on mobile with a selected store
